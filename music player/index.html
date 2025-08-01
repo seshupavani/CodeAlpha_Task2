@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Custom Music Player</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h2>Select Songs</h2>
+  <input type="file" id="fileInput" multiple accept="audio/*" />
+  
+  <div class="player">
+    <h3 id="songName">No song selected</h3>
+    <audio id="audio" controls></audio>
+    <div class="controls">
+      <button onclick="prev()">⏮️</button>
+      <button onclick="togglePlay()">▶️/⏸️</button>
+      <button onclick="next()">⏭️</button>
+    </div>
+    <ul id="playlist"></ul>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
